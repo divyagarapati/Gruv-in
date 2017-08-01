@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tcst.android.gruvin">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name=".Provider.GruvinProvider"
+            android:authorities="com.tcst.android.gruvin.Provider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activities.LoginOrganizer"
+            android:label="Login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.LoginUser"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.AudioListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.SignUp"
+            android:label="SignUp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.UserHome"
+            android:label="Userhome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.UserSignUp"
+            android:label="SignUp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.NewSchedule" />
+        <activity
+            android:name=".Activities.Schedule"
+            android:label="@string/schedule_game"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activities.Invite" />
+        <activity android:name=".Activities.User_Forgetname" />
+        <activity android:name=".Activities.User_Forgetpwd" />
+
+        <receiver android:name=".Services.MusicReceiver" />
+        <service android:name=".Services.MusicService" />
+        <receiver android:name=".Services.NotificationReceiver" />
+
+        <activity android:name=".Activities.SelectImagesFromGallery" />
+        <activity android:name=".Activities.Verify_Activity" />
+        <activity android:name=".Activities.ForgetPassword" />
+        <activity android:name=".Activities.ForgetUserName" />
+        <activity android:name=".Activities.EventListActivity" />
+        <activity android:name=".Activities.RsvpCode" />
+        <activity android:name=".Activities.AudioPlayer" />
+        <activity android:name=".Activities.CountDownActivity" />
+        <activity android:name=".Activities.CountDownEvent" />
+
+        <service
+            android:name=".Services.GeofenceService"
+            android:enabled="true"
+            android:exported="true" />
+        <activity android:name=".Activities.GeofenceActivity" />
+        <receiver android:name=".Services.HourNotifyReceiver" />
+        <service android:name=".Services.HourNotifyService" />
+
+        <activity android:name=".Activities.JoinedEventListActivity" />
+        <activity android:name=".Activities.PremiumAccountClass" />
+
+
+    </application>
+
+</manifest>

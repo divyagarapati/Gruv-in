@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/colorPrimary"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gruvin"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/txtupcomingevent_name"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxx"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/txt_upcomngtime"
+            android:textColor="@color/pink"
+            android:layout_below="@+id/txtupcomingevent_name"
+            android:layout_alignLeft="@+id/txtupcomingevent_name"
+            android:layout_alignStart="@+id/txtupcomingevent_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxx"
+            android:textColor="@color/pink"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/txt_upcomng_date"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtupcomingevent_name"
+            android:layout_alignBottom="@+id/txt_upcomngtime" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

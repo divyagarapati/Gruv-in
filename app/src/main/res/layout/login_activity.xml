@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textColorPrimary="@color/colorAccent"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/main"
+            android:layout_above="@+id/user_id"
+            android:layout_alignLeft="@+id/user_id"
+            android:layout_alignStart="@+id/user_id"
+            android:layout_alignRight="@+id/user_id"
+            android:layout_alignEnd="@+id/user_id" />
+
+
+        <Button
+            android:id="@+id/btn_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/frgt_pwd"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_above="@+id/login_btn"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif"
+            android:layout_alignLeft="@+id/user_pwd"
+            android:layout_alignStart="@+id/user_pwd" />
+
+
+        <Button
+            android:id="@+id/btn_forgot_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Forgot UserName ??"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:layout_below="@+id/user_pwd"
+            android:layout_alignRight="@+id/user_pwd"
+            android:layout_alignEnd="@+id/user_pwd"
+
+
+                />
+
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="User Id"
+            android:textColorHint="@color/white"
+            android:background="@drawable/background1"
+            android:textSize="20sp"
+            android:inputType="textAutoCorrect"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="15dp"
+            android:drawableLeft="@drawable/user"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_above="@+id/user_pwd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+             />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_btn"
+            android:text="Log In"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:visibility="visible"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif"
+            android:layout_above="@+id/btnLinkToRegisterScreen"
+            android:layout_alignLeft="@+id/btn_forgot"
+            android:layout_alignStart="@+id/btn_forgot"
+            android:layout_alignRight="@+id/btn_forgot_user"
+            android:layout_alignEnd="@+id/btn_forgot_user"
+            />
+
+        <Button
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Not a member?  Sign Up Now"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/login_btn"
+            android:layout_alignStart="@+id/login_btn"
+            android:layout_alignRight="@+id/login_btn"
+            android:layout_alignEnd="@+id/login_btn" />
+
+        <EditText
+            android:id="@+id/user_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="@string/pwd_hint"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:background="@drawable/background1"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_action_pwd"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:paddingLeft="15dp"
+            android:layout_above="@+id/btn_forgot"
+            android:layout_alignLeft="@+id/user_id"
+            android:layout_alignStart="@+id/user_id"
+            android:layout_alignRight="@+id/user_id"
+            android:layout_alignEnd="@+id/user_id"
+            android:fontFamily="sans-serif" />
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

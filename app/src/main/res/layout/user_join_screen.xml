@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/imageView"
+        android:background="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/find" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/host"
+        android:text="H O S T"
+        android:background="@drawable/button_border"
+        android:visibility="visible"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif"
+        android:layout_alignRight="@+id/rsvp"
+        android:layout_alignEnd="@+id/rsvp"
+        android:layout_alignLeft="@+id/rsvp"
+        android:layout_alignStart="@+id/rsvp" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rsvp"
+        android:text="R S V P"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="visible"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp"
+        android:background="@drawable/highlight"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="sans-serif" />
+
+
+
+    <Button
+        android:text="F I N D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/find"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp"
+        android:background="@drawable/highlight"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:layout_alignRight="@+id/rsvp"
+        android:layout_alignEnd="@+id/rsvp"
+        android:layout_alignLeft="@+id/rsvp"
+        android:layout_alignStart="@+id/rsvp" />
+
+   <!-- <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/user_logout"
+        android:layout_marginTop="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/find"
+        android:layout_alignStart="@+id/find"
+        android:layout_marginLeft="119dp"
+        android:layout_marginStart="119dp" />-->
+
+
+</RelativeLayout>

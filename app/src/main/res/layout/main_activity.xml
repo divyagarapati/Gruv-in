@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/users"
+        android:text="@string/JOIN"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_border"
+        android:visibility="visible"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="sans-serif" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/organiser"
+        android:text="@string/HOST"
+        android:background="@drawable/button_border"
+        android:visibility="visible"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/users"
+        android:layout_alignEnd="@+id/users"
+        android:layout_alignLeft="@+id/users"
+        android:layout_alignStart="@+id/users"
+        android:fontFamily="sans-serif" />
+
+</RelativeLayout>

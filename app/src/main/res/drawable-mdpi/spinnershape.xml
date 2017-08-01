@@ -1,0 +1,24 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <!-- Border Color -->
+            <stroke android:width="3px"
+                android:color="#424242" />
+            <gradient android:startColor="#424242"
+                android:endColor="#424242"
+                android:angle="270" />
+            <!-- Round Corners -->
+            <corners android:radius="6dp" />
+
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="end"
+            android:src="@drawable/ic_action_dropdown" />
+    </item>
+
+
+
+</layer-list>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:title="@string/start_game_title"
+            android:titleTextColor="@color/colorAccent"
+            android:layout_height="79dp"
+            android:background="@drawable/header"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:weightSum="1">
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textColorPrimary="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:background="@color/windowBackground"
+        android:weightSum="1">
+
+
+        <EditText
+            android:id="@+id/userid"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="First Name"
+            android:drawableLeft="@drawable/user"
+            android:textColorHint="@color/white"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/background1"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:layout_weight="0.60" />
+
+        <Button
+            android:layout_width="368dp"
+            android:layout_height="50dp"
+            android:id="@+id/Submit_btn"
+            android:text="Submit"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:visibility="visible"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"
+            android:layout_below="@+id/userid"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

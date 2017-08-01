@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="IMAGES"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/pink"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_addimages"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/roundedbutton"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/eImage"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/title_videos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="VIDEOS"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/pink"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_addvideos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/roundedbutton"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/videolistview"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/eVideo"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="COMMENTS"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/pink"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="Write your comments here.."
+            android:textColor="@color/black"
+            android:textColorHint="@color/blue" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:text="Save"
+            android:textColor="@color/pink" />
+    </LinearLayout>
+</ScrollView>

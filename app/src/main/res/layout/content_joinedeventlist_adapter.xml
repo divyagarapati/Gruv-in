@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/colorPrimary"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gruvin"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/txtjoinedevent"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxx"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/txt_joineventtime"
+            android:textColor="@color/pink"
+            android:layout_below="@+id/txtjoinedevent"
+            android:layout_alignLeft="@+id/txtjoinedevent"
+            android:layout_alignStart="@+id/txtjoinedevent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxx"
+            android:textColor="@color/pink"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/txt_joineventdate"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

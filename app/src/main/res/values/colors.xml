@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A9A9A9</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FFD31594</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pink">#d31594</color>
+    <color name="textColorHint">#FFFFFF</color>
+    <color name="windowBackground">#000000</color>
+    <color name="cream">#F5F5F5</color>
+    <color name="textColorPrimary">#d31594</color>
+    <color name="dim_grey">#696969</color>
+    <color name="light_pink">#F06292</color>
+    <color name="light_blue">#4DD0E1</color>
+    <color name="dark_blue">#26C6DA</color>
+    <color name="grey_light">#616161</color>
+    <color name="grey_dark">#424242</color>
+    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
+    <color name="blue">	#00FFF0</color>
+
+    <!--Switch Colors-->
+    <color name="disable_thumb_grey">#1c000000</color>
+    <color name="enable_thumb_pink">#1c000000</color>
+    <array name="tab_colors">
+        <item name="tab_1">#455C65</item>
+        <item name="tab_2">#00886A</item>
+        <item name="tab_3">#8B6B62</item>
+        <item name="tab_4">#6C4A42</item>
+        <item name="tab_5">#F63D2B</item>
+    </array>
+    <color name="color_tab_1">#455C65</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#8B6B62</color>
+    <color name="color_tab_4">#6C4A42</color>
+    <color name="color_tab_5">#F63D2B</color>
+
+    <color name="color_notification_back">#ffcd33</color>
+    <color name="color_notification_text">#3E4757</color>
+
+</resources>

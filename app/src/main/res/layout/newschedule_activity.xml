@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:minHeight="?attr/actionBarSize"
+            android:splitMotionEvents="true"
+            android:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextAppearance="@style/Toolbar">
+
+            <TextView
+                android:id="@+id/toolbar_scheduletitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:text="PRIVATE MAP"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="14dp"
+                android:drawableLeft="@drawable/backarrow"
+                android:text="Back"
+                android:textColor="@color/blue"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:id="@+id/stripBelowToolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#FF1493" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:background="@color/black"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textColorPrimary="@color/colorAccent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="6dp"
+            android:weightSum="1">
+
+            <SearchView
+                android:id="@+id/searchview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search"
+                android:layout_weight="1"/>
+
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/finaladd"
+                android:textColor="@color/white"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+
+        <SearchView
+            android:id="@+id/country_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/background1"
+            android:imeOptions="actionSearch"
+            android:queryHint="Search Your Location"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorPrimary" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_playlist"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="260dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/map">
+
+                    <EditText
+                        android:id="@+id/edt_addeventtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/background1"
+                        android:drawableLeft="@drawable/event"
+                        android:hint="@string/event_title"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/txt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/edt_addeventtitle"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background1"
+                        android:drawableLeft="@drawable/date"
+                        android:gravity="center"
+                        android:hint="@string/starting_date"
+                        android:onClick="dateSet"
+                        android:paddingLeft="6dp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+
+                    <TextView
+                        android:id="@+id/txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/txt_date"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/txt_date"
+                        android:layout_below="@+id/loc_text"
+                        android:background="@drawable/background1"
+                        android:drawableLeft="@drawable/time"
+                        android:gravity="center"
+                        android:hint="@string/Starting_time"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/loc_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/txt_date"
+                        android:text="@string/address"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/txtaudioname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/details"
+                        android:layout_marginTop="6dp"
+                        android:drawableLeft="@android:drawable/stat_sys_headset"
+                        android:paddingLeft="6dp"
+                        android:text="Audio Names"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/details"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/loc_text"
+                        android:background="@drawable/background1"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/edt_des"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/txt_Description"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/background1"
+                        android:drawableLeft="@android:drawable/ic_menu_edit"
+                        android:paddingLeft="6dp"
+                        android:paddingStart="6dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txt_Description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/txtaudioname"
+                        android:layout_marginTop="6dp"
+                        android:text="Description:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="normal|bold" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/btn_addevent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/button_border"
+            android:onClick="setAlarm"
+            android:text="C R E A T E  E V E N T"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_addevent"
+            android:background="@drawable/button_border"
+            android:text="C H O O S E  P L A Y L I S T"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:visibility="visible" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

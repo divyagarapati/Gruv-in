@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textColorPrimary="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/img_gruv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main" />
+
+        <TextView
+            android:id="@+id/txt_premium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="@string/premiumaccount"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:typeface="serif" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_premium"
+            android:layout_marginTop="340dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/txt_conta"
+            android:text="@string/contactus"
+            android:layout_marginLeft="35dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:id="@+id/txt_infomail"
+            android:layout_below="@+id/txt_premium"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorAccent"
+            android:layout_toRightOf="@+id/txt_conta"
+            android:text="@string/mail"/>
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="Ok"
+            android:id="@+id/btn_ok"
+            android:background="@drawable/button_border"
+            android:textColor="@color/white"
+            android:layout_below="@+id/txt_conta"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
